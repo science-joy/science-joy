@@ -8,7 +8,8 @@
             {% endif %}
         {% endif %}
         {% if page.navigation %}
-            {% include navigation.html %}
+            {% assign nav-class = include.nav-class | default: "primary-background" %}
+            {% include navigation.html nav-class=nav-class %}
         {% endif %}
     </div>
     <div class="site-nav-right">

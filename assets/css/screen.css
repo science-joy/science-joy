@@ -110,7 +110,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: color(var(--science-joy-primary)) no-repeat center center;
     background-size: cover;
 }
 
@@ -123,7 +123,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    /* background: rgba(0,0,0,0.18); */
 }
 
 .site-header:after {
@@ -164,7 +164,7 @@ body {
 }
 
 .site-logo {
-    max-height: 45px;
+    max-height: 192px;
 }
 
 .site-description {
@@ -259,12 +259,23 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     text-transform: uppercase;
 }
 
+.nav.light-background li a {
+    /* TODO: fix */
+    color: color(var(--science-joy-primary));
+    font-weight: 900;
+}
+
+.nav.primary-background li a {
+    color: #FFF;
+}
+
 .nav li a {
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
-    opacity: 0.8;
+    opacity: .9;
+
+    font-weight: bold;
 }
 
 .nav li a:hover {
@@ -297,6 +308,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 10px;
     color: #fff;
     opacity: 0.8;
+}
+
+.social-link img {
+    height: 1em;
 }
 
 .social-link:hover {
@@ -472,6 +487,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .reading-time {
+    /* TODO: nos interesa esto? */
+    display: none;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 33px;
@@ -1872,7 +1889,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: color(var(--science-joy-primary));
 }
 
 .site-footer-content {
@@ -1880,16 +1897,19 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: rgba(255,255,255,0.7);
+    color: #FFF;
+    opacity: .9;
     font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .site-footer-content a {
-    color: rgba(255,255,255,0.7);
+    /* opacity: .9; */
+    color: #FFF;
 }
 
 .site-footer-content a:hover {
-    color: rgba(255,255,255,1);
+    color: #FFF;
     text-decoration: none;
 }
 
