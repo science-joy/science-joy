@@ -15,7 +15,7 @@ cover: assets/images/covers/paper.jpeg
 logo: assets/images/logos/science-joy-320.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-CNAME: #add cname for website to be created
+CNAME: www.science-joy.com #add cname for website to be created
 
 # Social info
 navigation: True # show the navbar links
