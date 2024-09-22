@@ -65,6 +65,9 @@ layout: null
   {% endif %}
 
   {% for post in posts limit: 10 %}
+    {% if post.hidden %}
+      {% continue %}
+    {% endif %}
     <entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
       <title type="html">{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
       <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />

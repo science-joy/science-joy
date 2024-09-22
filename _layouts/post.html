@@ -123,7 +123,7 @@ into the {body} of the default.hbs template -->
                 {% assign related_posts = 0 %}
                 {% for post in site.posts %}
                   {% if post.tags.size > 0 %}
-                      {% if post.tags contains primary %}
+                      {% if post.tags contains primary and post.hidden != true %}
                         {% assign related_posts = related_posts | plus: 1 %}
                       {% endif %}
                   {% endif %}
@@ -146,12 +146,13 @@ into the {body} of the default.hbs template -->
                         <div class="read-next-divider">{% include infinity.html %}</div>
                         <div class="read-next-card-content">
                             <ul>
+                                <!-- uh maestro, esto hay que moverlo a un plugin mejor -->
                                 {% assign count = 0 %}
                                 {% for post in site.posts %}
                                   {% if post.tags contains primary %}
                                     {% if post.title != page.title %}
                                         {% assign count = count | plus: 1 %}
-                                        {% if count <= 3 %}
+                                        {% if count <= 3 and post.hidden != true %}
                                             <li><a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">{{ post.title }}</a></li>
                                         {% endif %}
                                     {% endif %}
@@ -175,12 +176,12 @@ into the {body} of the default.hbs template -->
             {% endif %}
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
-            {% if page.next %}
+            {% if page.next and page.next.hidden != true %}
                 {% include post-card-next.html %}
             {% endif %}
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
-            {% if page.previous %}
+            {% if page.previous and page.previous.hidden != true %}
                 {% include post-card-previous.html %}
             {% endif %}
 
