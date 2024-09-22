@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/posts/2024-09-09-lve-001-videojuegos-para-aprender.jpg
+cover:  assets/images/posts/2024-09-22-lve-002-nos-ensenan-los-videojuegos.jpg
 navigation: True
 title: LVE02 – ¿Nos enseñan los videojuegos? ¿Nos atraen los videojuegos?
 tags: [Lunes de Videojuegos y Educación]
