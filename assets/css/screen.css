@@ -290,10 +290,19 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 40px;
 }
 
+.site-nav .social-link img {
+    height: 1.5em;
+}
+
 .social-links {
     flex-shrink: 0;
     display: flex;
     align-items: center;
+}
+
+.social-links.light-background b {
+    /* TODO: fix */
+    color: color(var(--science-joy-primary));
 }
 
 .social-links a:last-of-type {
@@ -309,6 +318,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: #fff;
     opacity: 0.8;
 }
+
+.social-links.light-background .social-link svg {
+    fill: color(var(--science-joy-primary));
+}
+
 
 .social-link img {
     height: 1em;
@@ -378,9 +392,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         margin-right: 0;
         padding-left: 4vw;
     }
-    .site-nav-right {
+    /* .site-nav-right {
         display: none;
-    }
+    } */
 }
 
 
