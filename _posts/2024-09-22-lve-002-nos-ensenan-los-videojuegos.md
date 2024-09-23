@@ -8,7 +8,6 @@ tags: [Lunes de Videojuegos y Educación]
 class: post-template
 subclass: 'post'
 author: meugeniainchauspe
-hidden: true
 ---
 Fue tan enriquecedor para nuestro proyecto el contenido que Jean Paul Gee nos comparte en este libro, que hoy vamos a dedicarle otro lunes de videojuegos y educación.
 
@@ -29,7 +28,7 @@ Los 36 principios que describe Gee en su libro tienen su potencial motivacional,
 
 Un mundo virtual atractivo, donde tengo una identidad virtual que por lo atractivo del entorno me genera cierto compromiso. Puedo generar mi aprendizaje probando mis fortalezas y mi capacidad de resolución de problemas, al tiempo que voy afilando con la práctica esta misma capacidad. El camino que tomo para efectuar ese aprendizaje no es impuesto, puedo elegir entre varias opciones, tengo metas que me desafían y sé que las puedo alcanzar. 
 
-Y si logramos que estas afirmaciones estén presentes un estudiante de Química, de Física o de cualquier otra asignatura, ¿Qué cambiaría? ¿Sería más ágil su proceso de aprendizaje?
+Y si logramos que estas afirmaciones estén presentes en un estudiante de Química, de Física o de cualquier otra asignatura, ¿Qué cambiaría? ¿Sería más ágil su proceso de aprendizaje?
 
 Nuestra respuesta es bastante predecible: mejoraría mucho el proceso de enseñanza y aprendizaje y también sería notablemente más ágil. Y tú, ¿qué opinas? ¿Cuáles serías tus respuestas a nuestros interrogantes? Puedes dejarnos tu opinión en comentarios en nuestro reel de Instagram, te leemos y valoramos los contrapuntos que nos puedan hacer crecer.
 
