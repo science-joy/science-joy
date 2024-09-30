@@ -2,6 +2,9 @@
 
 {% assign count = 0 %}
 {% for post in site.posts %}
+    {% if post.hidden == true %}
+        {% continue %}
+    {% endif %}
     {% assign count = count | plus: 1 %}
     {% if count <= 3 %}
         <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">

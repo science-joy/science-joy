@@ -122,8 +122,11 @@ into the {body} of the default.hbs template -->
                 {% assign primary = page.tags | first %}
                 {% assign related_posts = 0 %}
                 {% for post in site.posts %}
+                  {% if post.hidden == true %}
+                    {% continue %}
+                  {% endif %}
                   {% if post.tags.size > 0 %}
-                      {% if post.tags contains primary and post.hidden != true %}
+                      {% if post.tags contains primary %}
                         {% assign related_posts = related_posts | plus: 1 %}
                       {% endif %}
                   {% endif %}
@@ -147,12 +150,16 @@ into the {body} of the default.hbs template -->
                         <div class="read-next-card-content">
                             <ul>
                                 <!-- uh maestro, esto hay que moverlo a un plugin mejor -->
+                                 <!-- y esta parte a un include, que se comparte con post-card-error -->
                                 {% assign count = 0 %}
                                 {% for post in site.posts %}
                                   {% if post.tags contains primary %}
+                                    {% if post.hidden == true %}
+                                        {% continue %}
+                                    {% endif %}
                                     {% if post.title != page.title %}
                                         {% assign count = count | plus: 1 %}
-                                        {% if count <= 3 and post.hidden != true %}
+                                        {% if count <= 3 %}
                                             <li><a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">{{ post.title }}</a></li>
                                         {% endif %}
                                     {% endif %}

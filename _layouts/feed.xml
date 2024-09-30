@@ -65,7 +65,7 @@ layout: null
   {% endif %}
 
   {% for post in posts limit: 10 %}
-    {% if post.hidden %}
+    {% if post.hidden == true %}
       {% continue %}
     {% endif %}
     <entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
