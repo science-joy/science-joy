@@ -598,6 +598,10 @@ The first (most recent) post in the list is styled to be bigger than the others 
     padding: 6vw 3vw 3vw;
     max-width: 1040px;
     text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 @media (max-width: 500px) {
     .post-full-header {
