@@ -8,7 +8,6 @@ tags: [Lunes de Videojuegos y Educación]
 class: post-template
 subclass: 'post'
 author: meugeniainchauspe
-hidden: true
 ---
 En este lunes de videojuegos y educación queremos presentar una herramienta que consideramos muy valiosa, donde padres y docentes pueden encontrar pautas claras para guiar en el buen uso de los videojuegos.
 
