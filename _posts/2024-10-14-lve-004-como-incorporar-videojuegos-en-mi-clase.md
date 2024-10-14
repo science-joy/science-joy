@@ -8,7 +8,6 @@ tags: [Lunes de Videojuegos y Educación]
 class: post-template
 subclass: 'post'
 author: meugeniainchauspe
-hidden: true
 ---
 “¿Existen videojuegos que yo pueda incorporar en mi clase?” “¿Cómo debo hacer esa incorporación?” “¿En qué ayudarán esas herramientas?” Son algunas de las preguntas que puede hacerse un docente. Hoy presentamos un recurso pensado para ayudarlos a responder esas preguntas y guiarlos en la incorporación de estas herramientas en el aula.
 
